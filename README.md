@@ -30,15 +30,32 @@ PORT='The port on which your application should start. Default is port 3000.'
 
 Run `npm start` from within the project directory.
 
-Choose the port your API is running on, and click TEST ROUTES to test your API.
+## Swagger Url ##
 
-## Schema ##
+Swagger Url: `localhost:3000/api-docs`
 
-```
-mongoose.Schema({
-  name: { type: String, required: true },
-  description: { type: String, required: true },
-  price: { type: Number, required: true },
-  inStock: { type: Boolean, required: true }
-})
-```
+## Endpoints Url ##
+
+* Signup: `localhost:3000/api/auth/signup` (POST)
+
+* Login: `localhost:3000/api/auth/login` (POST)
+
+* Create stuff: `localhost:3000/api/stuff` (POST)
+
+* Read a stuff: `localhost:3000/api/stuff/:stuffId` (GET)
+
+* Read all stuff: `localhost:3000/api/stuff` (GET)
+
+* Update stuff: `localhost:3000/api/stuff/:stuffId` (PUT)
+
+* Delete stuff: `localhost:3000/api/stuff/:stuffId` (DELETE)
+
+* Create product: `localhost:3000/api/products` (POST)
+
+* Read a product: `localhost:3000/api/products/:stuffId` (GET)
+
+* Read all product: `localhost:3000/api/products` (GET)
+
+* Update product: `localhost:3000/api/products/:stuffId` (PUT)
+
+* Delete product: `localhost:3000/api/products/:stuffId` (DELETE)
